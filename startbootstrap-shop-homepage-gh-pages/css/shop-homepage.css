@@ -22,6 +22,11 @@ div.col-lg-9 {
     margin-top: 15px;
 }
 
+.fill{
+    min-height: calc(100vh - 106px);
+
+}
+
 .low {
     position: relative;
     bottom: 0;
@@ -107,8 +112,19 @@ h3.my-4 {
     background-color: aliceblue;
 }
 
-.searchfunction {
-    right: 1rem;
-    top: 0.8rem;
-    position: absolute;
+.searchfunction [type=[ext]{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.input[type=text]:focus {
+    width: 100%;
 }
