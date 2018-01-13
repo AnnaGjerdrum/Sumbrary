@@ -1,22 +1,106 @@
-/* Hello */
-/* Hello again */
-
 /*!
  * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 
-h1 {
-    color: floralwhite
-}
+
+
 
 body {
-  padding-top: 54px;
+    padding-top: 54px;
+    box-sizing: none;
 }
 
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+    body {
+        padding-top: 56px;
+    }
+}
+
+div.col-lg-9 {
+    margin-top: 15px;
+}
+
+.low {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #198DA5;
+    text-decoration-color: white;
+    font-size: 9pt;
+}
+
+.top {
+    background-color: #198DA5;
+    text-decoration-color: white;
+}
+
+.full-bg {
+    background: url('../background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh
+}
+
+#carouselExampleIndicators .carousel-indicators {
+    margin-bottom: -40px;
+}
+
+#carouselExampleIndicators .carousel-indicators li {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 30%;
+    height: 20px;
+    width: 20px;
+}
+
+#carouselExampleIndicators .carousel-indicators li:hover {
+    background-color: #83C0B8;
+}
+
+#carouselExampleIndicators .carousel-indicators li.active  {
+    background-color: #198DA5;
+}
+
+.list-group {
+    padding-top: 60px;
+}
+
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.list-group-item {
+    background-color: #83C0B8;
+}
+
+a.list-group-item  {
+    color: #f8f9fa;
+}
+
+h4.card-title a{
+    color: #198DA5;
+}
+
+h3.my-4 {
+    color: #198DA5;
+}
+
+.login {
+    background-color: #ffd699;
+}
+
+.signup {
+    background-color: crimson;
 }
