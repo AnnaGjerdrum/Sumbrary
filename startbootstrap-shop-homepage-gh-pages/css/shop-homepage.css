@@ -112,7 +112,7 @@ h3.my-4 {
     background-color: aliceblue;
 }
 
-.searchfunction [type=[ext]{
+.searchfunction [type=text]{
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
