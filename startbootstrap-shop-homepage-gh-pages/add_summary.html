@@ -25,7 +25,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg top fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="About.html" style=color:white style=font-size:26pt>Sumbrary</a>
+                <a class="navbar-brand" href="index.html" style=color:white style=font-size:26pt>Sumbrary</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,12 +76,13 @@
                     </div>
 
                     <h1 class="my-4"></h1>
-                    <div class="list-group"> <!-- The links here need to be linked to the index with only their respective pages -->
-                        <a href="TemplatesearchingU.html" class="list-group-item">Universities</a>
-                        <a href="TemplatesearchingS.html" class="list-group-item">Subjects</a>
-                        <a href="TemplatesearchingB.html" class="list-group-item">Books</a>
+                    <div class="list-group">
+                        <a href="index.html" class="list-group-item">Home</a>
+                        <a href="About.html" class="list-group-item">About</a>
+                        <a href="Contact.html" class="list-group-item">Contact</a>
                     </div>
                     
+
                 </div>
                 <!-- /.col-lg-3 -->
 
@@ -94,59 +95,34 @@
 
                     <div class="row">
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="TemplatesearchingU.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                        <div class="col-lg-5 col-md-6 mb-5">
+                            <div class="card h-100 login">
+                                <!-- Changing to h-50 will make the white box smaller -->
+
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="TemplatesearchingU.html" color=#198dA5>Universities</a>
+                                        <p align="center">add Summary or Solution</p>
                                     </h4>
 
-                                    <p class="card-text">Search by different Universities, to have a look at the summaries or solutions of courses provided per University.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                    <p class="card-text">
+                                        <form action="/accountdata.php">
+                                            Title: <br>
+                                            <input type="text" account="AccountName" value="">
+                                            <br> Author: <br>
+                                            <input type="text" account="Password" value="">
+                                            <br> Date: <br>
+                                            <input type="text" account="AccountName" value="">
+                                            <br>
+                                            <br>
+                                            <button type="submit"> <i class="fa fa-upload" aria-hidden="true"></i></button> Upload File (.pdf or .docx)
+                                        </form>
+                                        <!-- This part is the same as sign up, and instead of logging in it will just send data to a database. I do not know how to create a solid log in at the moment -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="Templatesummary.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="Templatesummary.html" color=#198dA5>Books</a>
-                                    </h4>
-
-                                    <p class="card-text">Search by different books, to have a look at the provided summaries or solutions of different books.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9734; &#9734; &#9734; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="Templatesummary.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="Templatesummary.html" color=#198dA5>Subjects</a>
-                                    </h4>
-
-                                    <p class="card-text">Search by different subjects to have a look at the provided summaries or solutions per subject.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h1></h1>
-                        <h1></h1>
-
                     </div>
-                    <!-- /.row -->
+
 
                 </div>
                 <!-- /.col-lg-9 -->
@@ -160,10 +136,7 @@
         <!-- Footer -->
         <footer class="py-3 low">
             <div class="container">
-                <p class="m-0 text-center text-white">Copyright 2018 &copy; Anna Gjerdrum, Bob Sanders, Bram Peters & Bob Hofstede 
-                <span style="display:inline-block; width:30px"></span>
-                    <a href="Contact.html" class="text-white">Contact</a>
-                </p>
+                <p class="m-0 text-center text-white">Copyright 2018 &copy; Anna Gjerdrum, Bob Sanders, Bram Peters & Bob Hofstede </p>
             </div>
             <!-- /.container -->
         </footer>
